@@ -1,6 +1,102 @@
         /* Move your styles here when you're ready to clean up your HTML file */
         /* Don't forget to link to this file in your HTML, otherwise your styles won't show up! */
 
-        h2 {
-          background-color: blue;
+        /*Here is an example of cascading*/
+
+        /*First, we say "make all stuff within headers have a background grey"*/
+
+        header {
+          background-color: grey;
         }
+
+        /*but then we say "make all the stuff which is a header and a h2 tag have a background orange*/
+
+        header h2 {
+          background-color: orange;
+        }
+
+        /*then, just for laughs, I will say, "make the p tags inside the list elements have a  color of blue"*/
+
+        li p {
+          color: blue;
+        }
+
+        /*the tag selector to select the font size for the entire document*/
+
+        body {
+          font-size: 17px;
+        }
+
+        h1 {
+          font-family: cursive;
+        }
+
+        h2 {
+          font-family: cursive;
+        }
+/*
+        Use a tag selector to add a bottom border to every <header> tag.
+
+        HINT: The shorthand value for a border rule is always in the form: [width] [style] [color]*/
+
+        header {
+          border-bottom: 10px solid black;
+
+        }
+
+
+        /*Change the list-style-type of this list (.class-list) to 'square'
+
+Give every element with class 'item' a border
+
+Give elements with class 'even' a background-color of 'grey'
+
+Give elements with class 'odd' a background-color of 'black' and a color of 'white'
+
+You're done!*/
+
+    .class-list {
+      list-style-type: square;
+    }
+
+    .item {
+      border: 10px solid orange;
+    }
+
+    .item.even {
+      background-color: black;
+      color: white;
+    }
+
+    .item.odd {
+      background
+    }
+
+    #item1 {
+      font-size: 30px;
+    }
+
+    #item2 {
+      text-align: right;
+    }
+
+    ol li {
+      padding: 10px;
+      background-color: grey;
+    }
+
+    ol li:nth-child(odd) {
+      background-color: green;
+    }
+
+    article li ul li a:hover {
+      background-color: yellow;
+    }
+
+    article li ul li a:active {
+      background-color: red;
+    }
+
+    article li ul li a:active {
+      background-color: red;
+    }
